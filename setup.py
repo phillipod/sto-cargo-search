@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='sto-cargo-search',
     version='1.0.0',
-    description='Search and manage Star Trek Online CargoExport JSON data',
+    description='Search Star Trek Online CargoExport JSON data',
     author='Phillip O\'Donnell',
     author_email='phillip.odonnell@gmail.com',
     package_dir={'': 'src'},
