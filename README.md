@@ -90,5 +90,5 @@ For further information or support, please refer to the project maintainer liste
 
 ## Acknowledgements
 
-This project gratefully acknowledges contributions from the [SETS - STO Equipment and Trait Selector](https://github.com/STOCD/SETS) project and the [Star Trek Online Wiki](https://stowiki.net).  
+This project gratefully acknowledges the [SETS - STO Equipment and Trait Selector](https://github.com/STOCD/SETS) project and the [Star Trek Online Wiki](https://stowiki.net).  
 See [ACKNOWLEDGEMENT.md](ACKNOWLEDGEMENT.md) for full details.
