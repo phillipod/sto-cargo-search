@@ -15,7 +15,7 @@ pip install .
 Alternatively, install directly from a repository:
 
 ```bash
-pip install git+https://github.com/yourusername/sto-cargo-search.git
+pip install git+https://github.com/phillipod/sto-cargo-search.git
 ```
 
 Make sure Python 3.7 or later is installed on your system.
