@@ -2,7 +2,7 @@
 
 ## Description
 
-**STO Cargo Search** is a command-line tool designed to search and manage cargo data for the popular online game Star Trek Online (STO). It retrieves and parses JSON cargo files obtained from the unofficial [stowiki.net](https://stowiki.net) wiki. The tool includes robust searching and listing capabilities to easily query various types of data including personal traits, starship traits, duty officers (DOFFs), and equipment.
+**STO Cargo Search** is a command-line tool designed to search cargo data for the popular online game Star Trek Online (STO). It retrieves and parses JSON cargo files obtained from the unofficial [stowiki.net](https://stowiki.net) wiki. The tool includes robust searching and listing capabilities to easily query various types of data including personal traits, starship traits, duty officers (DOFFs), and equipment.
 
 ## Installation
 
@@ -32,6 +32,7 @@ sto-cargo-search [options]
 
 - `--file FILE`: Path to a specific JSON file. Overrides the `--search-type` parameter if provided.
 - `--search-type SEARCH_TYPE`: Comma-separated list of cargo data types to search within.
+  
   Valid types: `doff`, `equipment`, `personal_trait`, `starship_trait`.  
   If not specified, all types will be searched.
 - `--search SEARCH`: Search expression to filter results.
