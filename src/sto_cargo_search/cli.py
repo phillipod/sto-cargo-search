@@ -265,7 +265,7 @@ def print_starship_trait(obj, strip_html):
     print("\n" + "-"*40 + "\n")
 
 def print_doff(obj, strip_html):
-    print(f"Specization: {obj.get('doff_specialization', '')}")
+    print(f"Specialization: {obj.get('doff_specialization', '')}")
     print(f"Ship Duty: {obj.get('shipdutytype', '')}")
     print(f"Department: {obj.get('department', '')}\n")
     if obj.get('description'):
@@ -362,7 +362,7 @@ If not specified, all types will be searched."""
         seen = set()
         for obj in data:
             identifier = obj.get('name') or obj.get('doff_specialization') or obj.get('_pageName')
-            if identifier and identifier not in seen:
+            if identifier and (obj.get('doff_specialization') or identifier not in seen):
                 if not search_tree or search_tree.evaluate(obj):
                     all_matches[inferred_type].append(obj)
                     seen.add(identifier)
@@ -381,7 +381,7 @@ If not specified, all types will be searched."""
             seen = set()
             for obj in data:
                 identifier = obj.get('name') or obj.get('doff_specialization') or obj.get('_pageName')
-                if identifier and identifier not in seen:
+                if identifier and (obj.get('doff_specialization') or identifier not in seen):
                     if not search_tree or search_tree.evaluate(obj):
                         all_matches[stype].append(obj)
                         seen.add(identifier)
