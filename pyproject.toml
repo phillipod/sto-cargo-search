@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sto-cargo-search"
+version = "1.0.0"
+description = "Search and manage Star Trek Online Wiki CargoExport JSON data"
+authors = [
+  { name="Phillip O'Donnell", email="phillip.odonnell@gmail.com" }
+]
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "prettytable",
+    "pyparsing"
+]
+
+[project.scripts]
+sto-cargo-search = "sto_cargo_search.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"]
+
