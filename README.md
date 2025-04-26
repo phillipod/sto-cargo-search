@@ -87,3 +87,8 @@ This project is licensed under the GNU General Public License v3 (GPL3).
 ## Contact
 
 For further information or support, please refer to the project maintainer listed in the project's `pyproject.toml` file.
+
+## Acknowledgements
+
+This project gratefully acknowledges contributions from the [SETS - STO Equipment and Trait Selector](https://github.com/STOCD/SETS) project and the [Star Trek Online Wiki](https://stowiki.net).  
+See [ACKNOWLEDGEMENT.md](ACKNOWLEDGEMENT.md) for full details.
